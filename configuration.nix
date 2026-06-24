@@ -140,6 +140,12 @@
     bat
     mpv
     blender
+    ani-cli
+    curl
+    aria2
+    python314Packages.yt-dlp
+    ffmpeg
+    fzf
   ];
 
   environment.sessionVariables = {
