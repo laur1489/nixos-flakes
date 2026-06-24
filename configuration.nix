@@ -138,7 +138,8 @@
     gnumake
     tealdeer
     bat
-    claude-code
+    mpv
+    blender
   ];
 
   environment.sessionVariables = {
