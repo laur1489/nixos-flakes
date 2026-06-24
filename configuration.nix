@@ -138,6 +138,7 @@
     gnumake
     tealdeer
     bat
+    claude-code
   ];
 
   environment.sessionVariables = {
