@@ -146,6 +146,7 @@
     python314Packages.yt-dlp
     ffmpeg
     fzf
+    minidlna
   ];
 
   environment.sessionVariables = {
