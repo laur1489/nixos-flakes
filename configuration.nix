@@ -39,16 +39,19 @@
 
   services.blueman.enable = true;
   # Enable the X11 windowing system.
-  services.xserver = {
+      services.xserver = {
   enable = true;
-  windowManager.dwm.enable = true;
-
   displayManager.sessionCommands = ''
+    ${pkgs.xorg.xset}/bin/xset s off
+    ${pkgs.xorg.xset}/bin/xset -dpms
+    ${pkgs.xorg.xset}/bin/xset s noblank
     ${pkgs.xorg.xset}/bin/xset r rate 200 40
     ${pkgs.feh}/bin/feh --bg-fill /home/laur/Pictures/Wallpapers/castle.jpg &
     ${pkgs.xorg.xsetroot}/bin/xsetroot -cursor_name left_ptr
   '';
-};
+  windowManager.dwm.enable = true;
+};  
+
 
   services.xserver.desktopManager.session = [
      {
