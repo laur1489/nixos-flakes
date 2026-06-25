@@ -81,15 +81,8 @@
   services.minidlna = {
   enable = true;
   openFirewall = true;
-  settings = {
-    friendly_name = "NixOs";
-    media_dir = [ "V,/home/laur/Videos/MINIDLNA" ];
-    album_art_names = "Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg";
-    # Change these to strings:
-    enable_tivo = "yes";
-    strict_dlna = "no";
-    enable_subtitles = "yes"; 
-  };
+  # This tells the service to use your specific config file
+  extraConfig = builtins.readFile /home/laur/.config/minidlna/minidlna.conf;
 };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -161,7 +154,6 @@
     ffmpeg
     fzf
     minidlna
-    qbittorrent
   ];
 
   environment.sessionVariables = {
@@ -187,10 +179,10 @@
   # Open ports in the firewall.
   networking.firewall = {
   enable = true;
-  allowedTCPPorts = [ 53317 8200 ];
-  allowedUDPPorts = [ 53317 1900 ];
+  allowedTCPPorts = [ 53317 ];
+  allowedUDPPorts = [ 53317 ];
 };
- 
+
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
