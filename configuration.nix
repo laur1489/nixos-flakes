@@ -86,7 +86,7 @@
   openFirewall = true;
   settings = {
     friendly_name = "NixOs";
-    media_dir = [ "V,/home/laur/Videos/MINIDLNA" ];
+    media_dir = [ "V,/mnt/storage/Videos" ];
     album_art_names = "Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg";
     # Change these to strings:
     enable_tivo = "yes";
@@ -165,6 +165,7 @@
     fzf
     minidlna
     qbittorrent
+    exfatprogs
   ];
 
   environment.sessionVariables = {
