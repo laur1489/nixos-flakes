@@ -167,7 +167,7 @@
     qbittorrent
     exfatprogs
     opencode
-    jdk
+    jdk25
   ];
 
   environment.sessionVariables = {
