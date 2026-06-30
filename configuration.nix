@@ -166,6 +166,7 @@
     minidlna
     qbittorrent
     exfatprogs
+    opencode
   ];
 
   environment.sessionVariables = {
