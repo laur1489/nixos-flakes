@@ -169,6 +169,7 @@
     opencode
     jdk25
     jdk
+    chromium
   ];
 
   environment.sessionVariables = {
