@@ -170,6 +170,7 @@
     jdk25
     jdk
     chromium
+    libreoffice
   ];
 
   environment.sessionVariables = {
