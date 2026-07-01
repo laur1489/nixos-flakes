@@ -168,6 +168,7 @@
     exfatprogs
     opencode
     jdk25
+    jdk
   ];
 
   environment.sessionVariables = {
