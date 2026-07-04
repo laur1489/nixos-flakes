@@ -171,6 +171,7 @@
     jdk
     chromium
     libreoffice
+    btop
   ];
 
   environment.sessionVariables = {
