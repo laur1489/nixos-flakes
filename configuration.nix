@@ -173,6 +173,7 @@
     libreoffice
     btop
     kdePackages.ark
+    obs-studio
   ];
 
   environment.sessionVariables = {
