@@ -172,6 +172,7 @@
     chromium
     libreoffice
     btop
+    kdePackages.ark
   ];
 
   environment.sessionVariables = {
