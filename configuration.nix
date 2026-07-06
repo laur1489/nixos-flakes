@@ -174,6 +174,7 @@
     btop
     kdePackages.ark
     obs-studio
+    anydesk
   ];
 
   environment.sessionVariables = {
