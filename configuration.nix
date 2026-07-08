@@ -175,6 +175,7 @@
     kdePackages.ark
     obs-studio
     anydesk
+    pavucontrol
   ];
 
   environment.sessionVariables = {
