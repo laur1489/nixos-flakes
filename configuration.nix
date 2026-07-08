@@ -176,6 +176,7 @@
     obs-studio
     anydesk
     pavucontrol
+    qpwgraph
   ];
 
   environment.sessionVariables = {
