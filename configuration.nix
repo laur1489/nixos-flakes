@@ -178,6 +178,7 @@
     pavucontrol
     qpwgraph
     protonup-qt
+    pkgs.fetch
   ];
 
   environment.sessionVariables = {
