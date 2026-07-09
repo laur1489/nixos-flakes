@@ -177,6 +177,7 @@
     anydesk
     pavucontrol
     qpwgraph
+    protonup-qt
   ];
 
   environment.sessionVariables = {
