@@ -182,6 +182,8 @@
     qpwgraph
     protonup-qt
     pkgs.fetch
+    python3
+    python3Packages.pip
   ];
 
   environment.sessionVariables = {
