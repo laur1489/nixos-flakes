@@ -74,12 +74,14 @@
   # Enable sound.
   # services.pulseaudio.enable = true;
   # OR
+  security.rtkit.enable = true;
   services.pipewire = {
-     enable = true;
-     alsa.enable = true;
-     alsa.support32Bit = true;
-     pulse.enable = true;
-  };
+  enable = true;
+  alsa.enable = true;
+  alsa.support32Bit = true;
+  pulse.enable = true;
+  wireplumber.enable = true;
+};
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
@@ -283,5 +285,13 @@ fileSystems."/mnt/storage" = {
   options = [ "defaults" "nofail" ];
 };
 
+programs.dconf.enable = true;
+xdg.portal = {
+  enable = true;
+  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+};
+
+
 }
+
 
