@@ -186,6 +186,7 @@
     pkgs.fetch
     python3
     python3Packages.pip
+    krita
   ];
 
   environment.sessionVariables = {
