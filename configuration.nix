@@ -187,6 +187,7 @@
     python3
     python3Packages.pip
     krita
+    gdb
   ];
 
   environment.sessionVariables = {
