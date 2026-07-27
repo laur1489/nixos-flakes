@@ -103,7 +103,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.laur = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "libvirtd" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree
@@ -188,6 +188,7 @@
     python3Packages.pip
     krita
     gdb
+    qemu
   ];
 
   environment.sessionVariables = {
@@ -293,6 +294,14 @@ xdg.portal = {
   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 };
 
+virtualisation.libvirtd.enable = true;
+virtualisation.spiceUSBRedirection.enable = true;
+
+programs.virt-manager.enable = true;
+
+users.groups.libvirtd.members = [ "laur" ];
+
+boot.kernelModules = [ "kvm-intel" ];
 
 }
 
