@@ -190,6 +190,9 @@
     gdb
     qemu
     heroic
+    p7zip
+    cabextract
+    unzip
   ];
 
   environment.sessionVariables = {
