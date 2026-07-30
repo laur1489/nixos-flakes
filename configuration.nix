@@ -193,6 +193,7 @@
     p7zip
     cabextract
     unzip
+    steam-run
   ];
 
   environment.sessionVariables = {
