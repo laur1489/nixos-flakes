@@ -189,6 +189,7 @@
     krita
     gdb
     qemu
+    heroic
   ];
 
   environment.sessionVariables = {
