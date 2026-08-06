@@ -194,6 +194,7 @@
     cabextract
     unzip
     steam-run
+    pciutils
   ];
 
   environment.sessionVariables = {
