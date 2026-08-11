@@ -195,6 +195,7 @@
     unzip
     steam-run
     pciutils
+    qdirstat
   ];
 
   environment.sessionVariables = {
