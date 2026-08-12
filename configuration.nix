@@ -210,6 +210,7 @@
     steam-run
     pciutils
     qdirstat
+    qutebrowser
   ];
 
   environment.sessionVariables = {
