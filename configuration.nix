@@ -205,6 +205,7 @@
     PATH = [
       "$HOME/.local/bin"
     ];
+    LD_LIBRARY_PATH = "${pkgs.libxtst}/lib";
    };
 
   # Some programs need SUID wrappers, can be configured further or are
