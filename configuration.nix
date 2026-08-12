@@ -125,6 +125,14 @@
   libX11
   libXext
   libXfixes
+  libxkbcommon
+  libxt
+  libxi
+  libxinerama
+  libxrandr
+  libxrender
+  libxcursor
+  libglvnd
 ];
  
   # List packages installed in system profile.
@@ -216,6 +224,14 @@
     pkgs.libX11
     pkgs.libXext
     pkgs.libXfixes
+    pkgs.libxkbcommon
+    pkgs.libxt
+    pkgs.libxi
+    pkgs.libxinerama
+    pkgs.libxrandr
+    pkgs.libxrender
+    pkgs.libxcursor
+    pkgs.libglvnd
   ];
 };
 
