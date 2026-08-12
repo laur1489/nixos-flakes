@@ -122,6 +122,9 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
   libxtst
+  libX11
+  libXext
+  libXfixes
 ];
  
   # List packages installed in system profile.
@@ -208,7 +211,12 @@
    };
 
   environment.variables = {
-  LD_LIBRARY_PATH = "${pkgs.libxtst}/lib";
+  LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+    pkgs.libxtst
+    pkgs.libX11
+    pkgs.libXext
+    pkgs.libXfixes
+  ];
 };
 
   # Some programs need SUID wrappers, can be configured further or are
