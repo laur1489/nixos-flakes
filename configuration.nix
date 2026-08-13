@@ -211,6 +211,7 @@
     pciutils
     qdirstat
     qutebrowser
+    picom
   ];
 
   environment.sessionVariables = {
