@@ -101,9 +101,9 @@
 };
 
    services.picom = {
-   enable = true;
-   backend = "glx";
-   vSync = true;
+    enable = true;
+    backend = "xrender";
+    vSync = true;
 };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
