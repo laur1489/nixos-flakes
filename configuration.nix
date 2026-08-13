@@ -124,22 +124,6 @@
     syntaxHighlighting.enable = true;
     autosuggestions.enable = true;
 };
-  
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-  libxtst
-  libX11
-  libXext
-  libXfixes
-  libxkbcommon
-  libxt
-  libxi
-  libxinerama
-  libxrandr
-  libxrender
-  libxcursor
-  libglvnd
-];
  
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -225,23 +209,6 @@
       "$HOME/.local/bin"
     ];
    };
-
-  environment.variables = {
-  LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
-    pkgs.libxtst
-    pkgs.libX11
-    pkgs.libXext
-    pkgs.libXfixes
-    pkgs.libxkbcommon
-    pkgs.libxt
-    pkgs.libxi
-    pkgs.libxinerama
-    pkgs.libxrandr
-    pkgs.libxrender
-    pkgs.libxcursor
-    pkgs.libglvnd
-  ];
-};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
