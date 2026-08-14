@@ -205,6 +205,8 @@
     unrar
     wine
     winetricks
+    wineWow64Packages.stable
+    wine64
   ];
 
   environment.sessionVariables = {
