@@ -202,6 +202,7 @@
     qdirstat
     qutebrowser
     picom
+    unrar
   ];
 
   environment.sessionVariables = {
