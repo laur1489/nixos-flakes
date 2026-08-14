@@ -203,6 +203,7 @@
     qutebrowser
     picom
     unrar
+    wine
   ];
 
   environment.sessionVariables = {
