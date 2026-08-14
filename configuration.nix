@@ -204,6 +204,7 @@
     picom
     unrar
     wine
+    winetricks
   ];
 
   environment.sessionVariables = {
