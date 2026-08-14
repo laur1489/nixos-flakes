@@ -203,7 +203,6 @@
     qutebrowser
     picom
     unrar
-    wine
     winetricks
     wineWow64Packages.stable
     wine64
