@@ -208,6 +208,7 @@
     winetricks
     wineWow64Packages.stable
     wine64
+    obsidian
   ];
 
   environment.sessionVariables = {
