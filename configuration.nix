@@ -209,6 +209,9 @@
     wineWow64Packages.stable
     wine64
     obsidian
+    netcat
+    nmap
+    ghidra
   ];
 
   environment.sessionVariables = {
