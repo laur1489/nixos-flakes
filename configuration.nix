@@ -216,6 +216,7 @@
     jadx
     jetbrains.idea
     jdk21
+    aider-chat
   ];
 
   environment.sessionVariables = {
