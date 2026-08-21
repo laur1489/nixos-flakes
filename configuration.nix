@@ -214,6 +214,7 @@
     ghidra
     rustdesk
     jadx
+    jetbrains.idea
   ];
 
   environment.sessionVariables = {
