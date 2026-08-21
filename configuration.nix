@@ -215,6 +215,7 @@
     rustdesk
     jadx
     jetbrains.idea
+    jdk21
   ];
 
   environment.sessionVariables = {
