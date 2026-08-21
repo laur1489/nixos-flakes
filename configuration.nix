@@ -212,6 +212,8 @@
     netcat
     nmap
     ghidra
+    rustdesk
+    jadx
   ];
 
   environment.sessionVariables = {
