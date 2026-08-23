@@ -217,6 +217,7 @@
     jetbrains.idea
     jdk21
     aider-chat
+    osu-lazer-bin
   ];
 
   environment.sessionVariables = {
