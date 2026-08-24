@@ -218,7 +218,6 @@
     jdk21
     aider-chat
     osu-lazer-bin
-    spotify-cli-linux
   ];
 
   environment.sessionVariables = {
