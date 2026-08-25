@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -29,9 +29,9 @@
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
   # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  #   useXkbConfig = true; # use xkb.options in tty.
+  #    font = "Lat2-Terminus16";
+  #    keyMap = "us";
+  #    useXkbConfig = true; # use xkb.options in tty.
   # };
 
   hardware.bluetooth.enable = true;
@@ -218,6 +218,7 @@
     jdk21
     aider-chat
     osu-lazer-bin
+    inputs.spotatui.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   environment.sessionVariables = {
@@ -230,8 +231,8 @@
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
+  #    enable = true;
+  #    enableSSHSupport = true;
   # };
 
   # List services that you want to enable:
@@ -326,6 +327,3 @@ users.groups.libvirtd.members = [ "laur" ];
 boot.kernelModules = [ "kvm-intel" ];
 
 }
-
-
-
