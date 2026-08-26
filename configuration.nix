@@ -252,6 +252,12 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
+  services.clamav = {
+  daemon.enable = true;
+  updater.enable = true;
+};
+
+
   # Open ports in the firewall for MediaMTX and other services
 networking.firewall = {
   enable = true;
