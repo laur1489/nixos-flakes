@@ -219,6 +219,7 @@
     aider-chat
     osu-lazer-bin
     inputs.spotatui.packages.${pkgs.stdenv.hostPlatform.system}.default
+    scrcpy
   ];
 
   environment.sessionVariables = {
