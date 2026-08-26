@@ -111,7 +111,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.laur = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "libvirtd" "adbusers" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "libvirtd" "adbusers" "video" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree
@@ -355,6 +355,6 @@ programs.virt-manager.enable = true;
 
 users.groups.libvirtd.members = [ "laur" ];
 
-boot.kernelModules = [ "kvm-intel" ];
+boot.kernelModules = [ "kvm-intel" "v4l2loopback" ];
 
 }
