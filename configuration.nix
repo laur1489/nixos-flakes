@@ -243,14 +243,28 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
-  # Open ports in the firewall.
-  networking.firewall = {
+  # Open ports in the firewall for MediaMTX and other services
+networking.firewall = {
   enable = true;
-  allowedTCPPorts = [ 53317 8200 ];
-  allowedUDPPorts = [ 53317 1900 ];
+  allowedTCPPorts = [ 
+    53317 
+    8200 
+    1935  # RTMP
+    8554  # RTSP
+    8888  # HLS
+    8889  # WebRTC HTTP
+  ];
+  allowedUDPPorts = [ 
+    53317 
+    1900 
+    8000  # RTSP RTP
+    8001  # RTSP RTCP
+    8189  # WebRTC ICE
+    8890  # SRT
+  ];
 };
- 
-  # Copy the NixOS configuration file and link it from the resulting system
+
+ # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
   # system.copySystemConfiguration = true;
