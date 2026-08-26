@@ -16,6 +16,10 @@
 
   boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
 
+  boot.extraModprobeConfig = ''
+  options v4l2loopback devices=2 video_nr=1,2 card_label="DroidCam,OBS Virtual Camera" exclusive_caps=1
+'';
+
   networking.hostName = "nixos"; # Define your hostname.
 
   # Configure network connections interactively with nmcli or nmtui.
