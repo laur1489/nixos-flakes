@@ -111,7 +111,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.laur = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "libvirtd" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "libvirtd" "adbusers" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree
@@ -126,6 +126,15 @@
     syntaxHighlighting.enable = true;
     autosuggestions.enable = true;
 };
+ 
+  programs.obs-studio = {
+    enable = true;
+    enableVirtualCamera = true; # Sets up v4l2loopback automatically
+    plugins = with pkgs.obs-studio-plugins; [
+      droidcam-obs
+    ];
+  };
+
  
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -222,6 +231,7 @@
     scrcpy
     mediamtx
     android-studio
+    android-tools
   ];
 
   environment.sessionVariables = {
