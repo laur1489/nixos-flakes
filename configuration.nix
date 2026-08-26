@@ -14,12 +14,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
-
-  boot.extraModprobeConfig = ''
-  options v4l2loopback devices=2 video_nr=1,2 card_label="DroidCam,OBS Virtual Camera" exclusive_caps=1
-'';
-
   networking.hostName = "nixos"; # Define your hostname.
 
   # Configure network connections interactively with nmcli or nmtui.
@@ -117,7 +111,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.laur = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "libvirtd" "adbusers" "video" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "libvirtd" "adbusers" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree
@@ -234,11 +228,7 @@
     aider-chat
     osu-lazer-bin
     inputs.spotatui.packages.${pkgs.stdenv.hostPlatform.system}.default
-    scrcpy
-    mediamtx
-    android-studio
     android-tools
-    droidcam
   ];
 
   environment.sessionVariables = {
