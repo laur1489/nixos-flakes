@@ -232,6 +232,7 @@
     mediamtx
     android-studio
     android-tools
+    droidcam
   ];
 
   environment.sessionVariables = {
