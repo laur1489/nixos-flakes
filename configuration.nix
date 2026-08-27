@@ -230,6 +230,7 @@
     inputs.spotatui.packages.${pkgs.stdenv.hostPlatform.system}.default
     android-tools
     clamav
+    vscodium
   ];
 
   environment.sessionVariables = {
