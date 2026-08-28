@@ -231,6 +231,7 @@
     android-tools
     clamav
     vscodium
+    proton-vpn
   ];
 
   environment.sessionVariables = {
