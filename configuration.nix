@@ -235,6 +235,7 @@
     clamav
     vscodium
     proton-vpn-cli
+    gnome-keyring
   ];
 
   environment.sessionVariables = {
