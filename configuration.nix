@@ -236,6 +236,7 @@
     vscodium
     proton-vpn-cli
     gnome-keyring
+    zenity
   ];
 
   environment.sessionVariables = {
