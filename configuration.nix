@@ -138,6 +138,10 @@
     ];
   };
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "olm-3.2.16"
+  ];
+
  
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -237,6 +241,7 @@
     proton-vpn-cli
     gnome-keyring
     zenity
+    nheko
   ];
 
   environment.sessionVariables = {
