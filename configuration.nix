@@ -242,6 +242,8 @@
     gnome-keyring
     zenity
     nheko
+    libxkbcommon
+    xwayland-satellite
   ];
 
   environment.sessionVariables = {
