@@ -244,6 +244,7 @@
     nheko
     libxkbcommon
     xwayland-satellite
+    davinci-resolve-studio
   ];
 
   environment.sessionVariables = {
