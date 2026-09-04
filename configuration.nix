@@ -245,6 +245,7 @@
     libxkbcommon
     xwayland-satellite
     davinci-resolve-studio
+    chocolate-doom
   ];
 
   environment.sessionVariables = {
