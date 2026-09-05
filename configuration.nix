@@ -324,6 +324,11 @@ nixpkgs.config = {
     allowUnfree = true; 
   };
 
+environment.variables = {
+    RESOLVE_SCRIPT_API = "/opt/resolve/Developer/Scripting";
+    RESOLVE_SCRIPT_LIB = "/opt/resolve/libs/Fusion/fusionscript.so";
+  };
+
 services.xserver.videoDrivers = [ "nvidia" ];
 
 xdg.mime.enable = true;
