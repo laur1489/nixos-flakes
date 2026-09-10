@@ -245,6 +245,7 @@
     xwayland-satellite
     davinci-resolve-studio
     chocolate-doom
+    ungoogled-chromium
   ];
 
   environment.sessionVariables = {
