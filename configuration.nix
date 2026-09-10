@@ -197,7 +197,6 @@
     opencode
     jdk25
     jdk
-    chromium
     libreoffice
     btop
     kdePackages.ark
