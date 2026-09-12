@@ -246,6 +246,7 @@
     davinci-resolve-studio
     chocolate-doom
     ungoogled-chromium
+    tor-browser
   ];
 
   environment.sessionVariables = {
