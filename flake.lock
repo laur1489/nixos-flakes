@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1787498568,
-        "narHash": "sha256-9i/VTdusq/+NM/tz+J1Re+ojkMB8MBf0QshnYfzHz30=",
+        "lastModified": 1789785513,
+        "narHash": "sha256-B44WL6h0XoLjJ41bUPJk0X5SDinLCII//6EcBLXKiJ0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+        "rev": "20b1ddd1aa5ace70c9468305030aa4f9ef79671b",
         "type": "github"
       },
       "original": {
@@ -48,11 +48,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1787672945,
-        "narHash": "sha256-Svijo3ug4qMRn9jBhrUY9FhrVmoyGVu2t281e9P7J/I=",
+        "lastModified": 1789844363,
+        "narHash": "sha256-fMFZkVkdGcNhGb1RE3ZAu4ASpEz9wxki6SKsVUDezmY=",
         "owner": "LargeModGames",
         "repo": "spotatui",
-        "rev": "15f254e67c67e80d5b40acd21dd76edf50cb252c",
+        "rev": "91fd6b36f5b0f6081cf0aebd8e1471f71fcee532",
         "type": "github"
       },
       "original": {
