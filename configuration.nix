@@ -138,6 +138,11 @@
     ];
   };
 
+  programs.thunar = {
+  enable = true;
+  plugins = [ pkgs.thunar-volman ];
+};
+
   nixpkgs.config.permittedInsecurePackages = [
     "olm-3.2.16"
   ];
@@ -260,6 +265,7 @@
 
   # List services that you want to enable:
   services.udisks2.enable = true;
+  services.gvfs.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
