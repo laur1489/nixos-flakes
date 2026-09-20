@@ -147,6 +147,12 @@
     "olm-3.2.16"
   ];
 
+# Qt apps (Dolphin, etc.)
+qt = {
+  enable = true;
+  style = "adwaita-dark";
+};
+
  
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -247,13 +253,15 @@
     ungoogled-chromium
     tor-browser
     thunar
+    adwaita-icon-theme
   ];
 
   environment.sessionVariables = {
-    PATH = [
-      "$HOME/.local/bin"
-    ];
-   };
+  PATH = [
+    "$HOME/.local/bin"
+  ];
+  GTK_THEME = "Adwaita:dark";
+};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
