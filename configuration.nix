@@ -217,7 +217,6 @@
     steam-run
     pciutils
     qdirstat
-    qutebrowser
     picom
     unrar
     winetricks
@@ -232,21 +231,17 @@
     jetbrains.idea
     jdk21
     aider-chat
-    osu-lazer-bin
-    inputs.spotatui.packages.${pkgs.stdenv.hostPlatform.system}.default
-    android-tools
     clamav
     vscodium
-    proton-vpn-cli
     gnome-keyring
     zenity
     nheko
     libxkbcommon
     xwayland-satellite
     davinci-resolve-studio
-    chocolate-doom
     ungoogled-chromium
     tor-browser
+    thunar
   ];
 
   environment.sessionVariables = {
