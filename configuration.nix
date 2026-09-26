@@ -254,6 +254,7 @@ qt = {
     tor-browser
     thunar
     adwaita-icon-theme
+    tailscale
   ];
 
   environment.sessionVariables = {
