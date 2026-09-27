@@ -255,6 +255,7 @@ qt = {
     thunar
     adwaita-icon-theme
     tailscale
+    i2p
   ];
 
   environment.sessionVariables = {
