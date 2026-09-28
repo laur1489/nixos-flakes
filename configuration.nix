@@ -258,6 +258,7 @@ qt = {
     adwaita-icon-theme
     tailscale
     i2p
+    teams-for-linux
   ];
 
   environment.sessionVariables = {
