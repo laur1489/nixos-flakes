@@ -264,6 +264,7 @@ qt = {
     i2p
     teams-for-linux
     file-roller
+    inputs.stability-matrix-nix.packages.${system}.default
   ];
 
   environment.sessionVariables = {
