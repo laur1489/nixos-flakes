@@ -264,6 +264,7 @@ qt = {
     i2p
     teams-for-linux
     file-roller
+    wireshark
   ];
 
   environment.sessionVariables = {
