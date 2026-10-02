@@ -142,8 +142,12 @@
 
   programs.thunar = {
   enable = true;
-  plugins = [ pkgs.thunar-volman ];
+  plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman   # optional, for removable media
+  ];
 };
+
 
   nixpkgs.config.permittedInsecurePackages = [
     "olm-3.2.16"
@@ -259,6 +263,7 @@ qt = {
     tailscale
     i2p
     teams-for-linux
+    file-roller
   ];
 
   environment.sessionVariables = {
