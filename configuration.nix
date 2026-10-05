@@ -268,6 +268,7 @@ qt = {
     file-roller
     wireshark
     scrcpy
+    android-tools
   ];
 
   environment.sessionVariables = {
