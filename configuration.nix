@@ -260,13 +260,10 @@ qt = {
     nheko
     libxkbcommon
     xwayland-satellite
-    davinci-resolve-studio
     ungoogled-chromium
-    tor-browser
     thunar
     adwaita-icon-theme
     tailscale
-    i2p
     teams-for-linux
     file-roller
     wireshark
