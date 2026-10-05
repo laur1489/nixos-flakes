@@ -276,6 +276,7 @@ qt.enable = true;
     "$HOME/.local/bin"
   ];
   GTK_THEME = "Adwaita:dark";
+  QT_QPA_PLATFORMTHEME = "qt6ct";
 };
  
   # Some programs need SUID wrappers, can be configured further or are
