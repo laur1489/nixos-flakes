@@ -269,6 +269,8 @@ qt = {
     wireshark
     scrcpy
     android-tools
+    kdePackages.qt6ct
+    adwaita-qt6
   ];
 
     environment.sessionVariables = {
