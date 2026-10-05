@@ -269,6 +269,8 @@ qt.enable = true;
     kdePackages.qt6ct
     adwaita-qt6
     nerd-fonts.iosevka
+    kdePackages.qt6ct
+    kdePackages.qtstyleplugin-kvantum
   ];
 
     environment.sessionVariables = {
