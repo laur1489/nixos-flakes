@@ -267,6 +267,7 @@ qt = {
     teams-for-linux
     file-roller
     wireshark
+    scrcpy
   ];
 
   environment.sessionVariables = {
