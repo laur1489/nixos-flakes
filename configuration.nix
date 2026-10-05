@@ -159,10 +159,7 @@
   ];
 
 # Qt apps (Dolphin, etc.)
-qt = {
-  enable = true;
-  style = "adwaita-dark";
-};
+qt.enable = true;
 
  
   # List packages installed in system profile.
