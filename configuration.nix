@@ -279,6 +279,7 @@ qt.enable = true;
   ];
   GTK_THEME = "Adwaita:dark";
   QT_QPA_PLATFORMTHEME = "qt6ct";
+  QT_STYLE_OVERRIDE = "kvantum";
 };
  
   # Some programs need SUID wrappers, can be configured further or are
