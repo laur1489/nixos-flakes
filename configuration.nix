@@ -268,6 +268,7 @@ qt.enable = true;
     android-tools
     kdePackages.qt6ct
     adwaita-qt6
+    nerd-fonts.iosevka
   ];
 
     environment.sessionVariables = {
