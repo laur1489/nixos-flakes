@@ -271,13 +271,13 @@ qt = {
     android-tools
   ];
 
-  environment.sessionVariables = {
+    environment.sessionVariables = {
   PATH = [
     "$HOME/.local/bin"
   ];
   GTK_THEME = "Adwaita:dark";
 };
-
+ 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -347,11 +347,6 @@ networking.firewall = {
 nixpkgs.config = {
     android_sdk.accept_license = true;
     allowUnfree = true; 
-  };
-
-environment.variables = {
-    RESOLVE_SCRIPT_API = "/opt/resolve/Developer/Scripting";
-    RESOLVE_SCRIPT_LIB = "/opt/resolve/libs/Fusion/fusionscript.so";
   };
 
 services.xserver.videoDrivers = [ "nvidia" ];
