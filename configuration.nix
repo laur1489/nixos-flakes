@@ -153,7 +153,6 @@
   package = pkgs.wireshark;
 };
 
-
   nixpkgs.config.permittedInsecurePackages = [
     "olm-3.2.16"
   ];
@@ -257,7 +256,6 @@ qt.enable = true;
     nheko
     libxkbcommon
     xwayland-satellite
-    ungoogled-chromium
     thunar
     adwaita-icon-theme
     tailscale
@@ -272,6 +270,13 @@ qt.enable = true;
     kdePackages.qt6ct
     kdePackages.qtstyleplugin-kvantum
     pinta
+    (pkgs.ungoogled-chromium.override {
+    commandLineArgs = [
+      "--enable-unsafe-webgpu"
+      "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan"
+      "--use-angle=vulkan"
+    ];
+  })
   ];
 
     environment.sessionVariables = {
