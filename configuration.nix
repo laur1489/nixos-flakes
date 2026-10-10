@@ -271,6 +271,7 @@ qt.enable = true;
     nerd-fonts.iosevka
     kdePackages.qt6ct
     kdePackages.qtstyleplugin-kvantum
+    pinta
   ];
 
     environment.sessionVariables = {
