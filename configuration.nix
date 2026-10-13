@@ -277,6 +277,7 @@ qt.enable = true;
       "--use-angle=vulkan"
     ];
   })
+    irssi
   ];
 
     environment.sessionVariables = {
