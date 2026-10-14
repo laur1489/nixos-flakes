@@ -278,14 +278,14 @@ qt.enable = true;
     ];
   })
     irssi
+    kdePackages.breeze
+    kdePackages.plasma-integration
   ];
 
     environment.sessionVariables = {
-  PATH = [
-    "$HOME/.local/bin"
-  ];
+  PATH = [ "$HOME/.local/bin" ];
   GTK_THEME = "Adwaita:dark";
-  QT_QPA_PLATFORMTHEME = "qt6ct";
+  QT_QPA_PLATFORMTHEME = "kde";
   QT_STYLE_OVERRIDE = "kvantum";
 };
  
