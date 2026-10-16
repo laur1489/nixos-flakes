@@ -280,6 +280,7 @@ qt.enable = true;
     irssi
     kdePackages.breeze
     kdePackages.plasma-integration
+    aegisub
   ];
 
     environment.sessionVariables = {
