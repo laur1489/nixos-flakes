@@ -250,7 +250,6 @@ qt.enable = true;
     jdk21
     aider-chat
     clamav
-    vscodium
     gnome-keyring
     zenity
     nheko
