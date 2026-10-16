@@ -281,6 +281,7 @@ qt.enable = true;
     kdePackages.breeze
     kdePackages.plasma-integration
     aegisub
+    handbrake
   ];
 
     environment.sessionVariables = {
