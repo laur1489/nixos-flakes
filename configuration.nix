@@ -281,6 +281,7 @@ qt.enable = true;
     kdePackages.plasma-integration
     aegisub
     handbrake
+    vis
   ];
 
     environment.sessionVariables = {
