@@ -101,9 +101,18 @@
 };
 
    services.picom = {
-    enable = true;
-    backend = "xrender";
-    vSync = true;
+  enable = true;
+  backend = "glx";
+  vSync = true;
+
+  settings = {
+    unredir-if-possible = true;
+    use-damage = true;
+
+    shadow-exclude = [
+      "class_g = 'cs2'"
+    ];
+  };
 };
 
    services.flatpak.enable = true;
