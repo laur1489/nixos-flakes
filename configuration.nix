@@ -393,11 +393,27 @@ fonts.packages = with pkgs; [
   nerd-fonts.jetbrains-mono
 ];
 
-fileSystems."/mnt/storage" = {
-  device = "/dev/disk/by-uuid/48c6239c-0f39-4d31-a562-db4eb1b72bf8";
-  fsType = "ext4";
-  options = [ "defaults" "nofail" ];
-};
+boot.supportedFilesystems = [ "ntfs" ];
+
+fileSystems = {
+    # Your existing storage drive
+    "/mnt/storage" = {
+      device = "/dev/disk/by-uuid/48c6239c-0f39-4d31-a562-db4eb1b72bf8";
+      fsType = "ext4";
+      options = [ "defaults" "nofail" ];
+    };
+
+    # Your new Windows partition entry
+    "/mnt/windows" = {
+      device = "/dev/disk/by-uuid/01DD023AD9816EC0";
+      fsType = "ntfs-3g";
+      options = [
+        "nofail"
+        "noauto"
+        "rw"
+      ];
+    };
+  };
 
 programs.dconf.enable = true;
 xdg.portal = {
