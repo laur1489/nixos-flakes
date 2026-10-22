@@ -436,6 +436,8 @@ xdg.portal = {
   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 };
 
+programs.gpu-screen-recorder.enable = true;
+
 virtualisation.libvirtd.enable = true;
 virtualisation.spiceUSBRedirection.enable = true;
 
