@@ -130,7 +130,7 @@
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.lightdm.enableGnomeKeyring = true;
 
-  services.i2p.enable = true;
+  services.vice.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
