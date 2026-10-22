@@ -303,6 +303,7 @@ qt.enable = true;
   GTK_THEME = "Adwaita:dark";
   QT_QPA_PLATFORMTHEME = "kde";
   QT_STYLE_OVERRIDE = "kvantum";
+  GSR_ENCODER = "gpu";
 };
  
   # Some programs need SUID wrappers, can be configured further or are
@@ -401,6 +402,11 @@ hardware.nvidia = {
 hardware.graphics = {
     enable = true;
     enable32Bit = true; # Fixes the 32-bit Steam / Wine driver crashes
+    extraPackages = with pkgs; [
+      intel-media-driver   # For modern Intel Broadwell (5th Gen) and newer
+      intel-vaapi-driver  # Replaced 'vaapiIntel' (for legacy VAAPI support)
+      libva-utils
+    ];
   };
 
 fonts.packages = with pkgs; [
