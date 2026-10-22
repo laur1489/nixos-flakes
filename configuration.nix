@@ -132,6 +132,10 @@
 
   services.vice.enable = true;
 
+  systemd.user.services.vice.environment = {
+    GSR_ENCODER = "gpu";
+  };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   programs.firefox.enable = true;
