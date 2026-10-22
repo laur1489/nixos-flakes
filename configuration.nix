@@ -300,6 +300,7 @@ qt.enable = true;
     aegisub
     handbrake
     vis
+    mediainfo
   ];
 
     environment.sessionVariables = {
