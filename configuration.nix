@@ -381,21 +381,22 @@ services.xserver.videoDrivers = [ "nvidia" ];
 xdg.mime.enable = true;
 
 hardware.nvidia = {
-  modesetting.enable = true;
-  powerManagement.enable = false;
-  powerManagement.finegrained = false;
-  open = true;
-  nvidiaSettings = true;
-  package = config.boot.kernelPackages.nvidiaPackages.stable;
-  prime = {
-    offload = {
-      enable = true;
-      enableOffloadCmd = true;
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = false;
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+      intelBusId = "PCI:0:2:0";
+      nvidiaBusId = "PCI:1:0:0";
     };
-    intelBusId = "PCI:0:2:0";
-    nvidiaBusId = "PCI:1:0:0";
   };
-};
 
 hardware.graphics = {
     enable = true;
@@ -443,5 +444,10 @@ programs.virt-manager.enable = true;
 users.groups.libvirtd.members = [ "laur" ];
 
 boot.kernelModules = [ "kvm-intel" "v4l2loopback" ];
+
+boot.kernelParams = [
+    "pci=noaer"
+    "pcie_aspm=off"
+  ];
 
 }
