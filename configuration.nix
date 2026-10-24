@@ -55,15 +55,6 @@
   windowManager.windowmaker.enable = true;
 };  
 
-
-  services.xserver.desktopManager.session = [
-     {
-      name = "custom-xsession";
-      bgSupport = true;
-      start = "exec $HOME/.xsession";
-     }
-   ];
-
   # Configure keymap in X11
   services.xserver.xkb.layout = "us";
   services.xserver.xkb.options = "eurosign:e,caps:escape";
