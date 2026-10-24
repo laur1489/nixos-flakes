@@ -38,9 +38,11 @@
   hardware.bluetooth.powerOnBoot = true;
 
   services.blueman.enable = true;
+
   # Enable the X11 windowing system.
       services.xserver = {
   enable = true;
+  displayManager.lightdm.enable = true;
   displayManager.sessionCommands = ''
     ${pkgs.xorg.xset}/bin/xset s off
     ${pkgs.xorg.xset}/bin/xset -dpms
@@ -50,6 +52,7 @@
     ${pkgs.xorg.xsetroot}/bin/xsetroot -cursor_name left_ptr
   '';
   windowManager.dwm.enable = true;
+  windowManager.windowmaker.enable = true;
 };  
 
 
