@@ -301,6 +301,7 @@ qt.enable = true;
     handbrake
     vis
     mediainfo
+    windowmaker
   ];
 
     environment.sessionVariables = {
