@@ -304,6 +304,7 @@ qt.enable = true;
     vis
     mediainfo
     windowmaker
+    vesktop
   ];
 
     environment.sessionVariables = {
