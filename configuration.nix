@@ -305,6 +305,7 @@ qt.enable = true;
     mediainfo
     windowmaker
     vesktop
+    efibootmgr
   ];
 
     environment.sessionVariables = {
